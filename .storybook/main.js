@@ -23,18 +23,19 @@ module.exports = {
     '@storybook/addon-storysource',
     '@storybook/addon-a11y',
   ],
-  core: {
-    builder: 'webpack5',
-  },
-  features: {
-    previewCsfV3: true,
-    buildStoriesJson: true,
+  framework: {
+    name: '@storybook/vue3-webpack5',
+    options: {},
   },
   stories: [
     './Welcome/__welcome-story.js',
-    '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+    '../src/**/*.stories.@(js|jsx|ts|tsx)',
+    // MDX files temporarily disabled - need migration to MDX2 format
+    // '../src/**/*.stories.mdx',
   ],
-
+  docs: {
+    autodocs: true,
+  },
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
