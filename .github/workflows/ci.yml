@@ -19,6 +19,5 @@ jobs:
           LITMUS_FIGMA_ACCESS_TOKEN: ${{ secrets.PROD_LITMUS_FIGMA_ACCESS_TOKEN }}
         run: |
           npx litmus-cli upload \
-          --config=
-          ./storybook/figma.config.json \
+          --config=./storybook/figma.config.json \
           --access-token=${LITMUS_FIGMA_ACCESS_TOKEN}
