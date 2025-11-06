@@ -416,6 +416,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-proposal-private-methods@npm:^7.18.6":
+  version: 7.18.6
+  resolution: "@babel/plugin-proposal-private-methods@npm:7.18.6"
+  dependencies:
+    "@babel/helper-create-class-features-plugin": ^7.18.6
+    "@babel/helper-plugin-utils": ^7.18.6
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 22d8502ee96bca99ad2c8393e8493e2b8d4507576dd054490fd8201a36824373440106f5b098b6d821b026c7e72b0424ff4aeca69ed5f42e48f029d3a156d5ad
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-proposal-private-property-in-object@npm:7.21.0-placeholder-for-preset-env.2":
   version: 7.21.0-placeholder-for-preset-env.2
   resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.21.0-placeholder-for-preset-env.2"
@@ -1122,7 +1134,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-private-methods@npm:^7.22.5, @babel/plugin-transform-private-methods@npm:^7.27.1":
+"@babel/plugin-transform-private-methods@npm:^7.22.5, @babel/plugin-transform-private-methods@npm:^7.24.7, @babel/plugin-transform-private-methods@npm:^7.27.1":
   version: 7.27.1
   resolution: "@babel/plugin-transform-private-methods@npm:7.27.1"
   dependencies:
@@ -1668,7 +1680,9 @@ __metadata:
   dependencies:
     "@babel/core": ^7.17.10
     "@babel/eslint-parser": ^7.17.0
+    "@babel/plugin-proposal-private-methods": ^7.18.6
     "@babel/plugin-proposal-private-property-in-object": ^7.21.11
+    "@babel/plugin-transform-private-methods": ^7.24.7
     "@carbon/icons-vue": ^10.102.0
     "@commitlint/cli": ^16.3.0
     "@commitlint/config-conventional": ^16.2.4
@@ -1693,6 +1707,7 @@ __metadata:
     babel-loader: ^8.3.0
     carbon-components: ^10.58.5
     copy-webpack-plugin: ^10.2.4
+    core-js: ^3.38.1
     css-loader: ^6.7.2
     eslint: ^8.28.0
     eslint-plugin-prettier: ^5.2.1
@@ -10079,7 +10094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.8.3":
+"core-js@npm:^3.38.1, core-js@npm:^3.8.3":
   version: 3.46.0
   resolution: "core-js@npm:3.46.0"
   checksum: 03a3f1b094e8d8baa78081cdcbe2d49b608d612d2f940668c9063e43e52ff19d8e1c8137bdf79734a39445482f981e8d52653f8879539aaff49cf5d85e7183cc
