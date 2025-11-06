@@ -30,6 +30,7 @@
   ],
   "dependencies": {
     "@carbon/icons-vue": "^10.102.0",
+    "@figma/litmus-cli": "https://www.figma.com/api/litmus/cli/d0f2db449261.tgz",
     "@ibm/telemetry-js": "^1.5.1",
     "@vueuse/core": "^4.11.2",
     "carbon-components": "^10.58.5",

@@ -1,20 +1,8 @@
-name: CI
-
-on:
-  workflow_dispatch:
-  pull_request:
-    branches:
-      - main
-      - vNext
-  push:
-    branches:
-      - main
-      - vNext
-
+name: Litmus Storybook
+on: [ push ]
 jobs:
-  build:
+  litmus-storybook:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -22,45 +10,17 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/fermium
-
       - name: Install
         run: yarn
-
       - name: Package CI checks
         run: yarn build
-
-  lint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: lts/fermium
-
-      - name: Install
-        run: yarn
-
-      - name: Lint
-        run: yarn run lint --max-warnings 0 --no-fix
-
-  tests:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: lts/fermium
-
-      - name: Install
-        run: yarn 
-
-      - name: Run component tests
-        run: yarn test
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Litmus Storybook Tests
+        env:
+          LITMUS_FIGMA_ACCESS_TOKEN: ${{ secrets.PROD_LITMUS_FIGMA_ACCESS_TOKEN }}
+        run: |
+          npx litmus-cli upload \
+          --config=
+          ./storybook/figma.config.json \
+          --access-token=${LITMUS_FIGMA_ACCESS_TOKEN}

@@ -1,0 +1,27 @@
+{
+  "litmus": {
+    "projectId": "191ecee6-cd3d-493f-af1d-5e2a0cd300ad",
+    "storybook": {
+      "buildCommand": "yarn build-storybook",
+      "outDir": "storybook-static",
+      "excludeTags": ["no-test"],
+      "screenshotRootSelector": "#storybook-root"
+    },
+    "variants": {
+      "viewport": {
+        "default": {
+          "width": 1280,
+          "height": 720
+        },
+        "mobile": {
+          "width": 375,
+          "height": 667
+        }
+      },
+      "global:theme": {
+        "light": true,
+        "dark": true
+      }
+    }
+  }
+}
