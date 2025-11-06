@@ -28,6 +28,7 @@ module.exports = {
   },
   features: {
     previewCsfV3: true,
+    buildStoriesJson: true,
   },
   stories: [
     './Welcome/__welcome-story.js',

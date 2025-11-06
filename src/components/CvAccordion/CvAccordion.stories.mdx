@@ -3,7 +3,6 @@ import { action } from '@storybook/addon-actions';
 import { CvAccordion, CvAccordionItem } from '.';
 import { alignConsts, sizeConsts } from './consts';
 import {
-  sbCompPrefix,
   storyParametersObject,
 } from '../../global/storybook-utils';
 import { ref } from 'vue';
@@ -19,7 +18,7 @@ function onToggleEpisode3(){
   else disabledItems.value.add(3)
 }
 
-<Meta title={`${sbCompPrefix}/CvAccordion`} component={CvAccordion} />
+<Meta title="Component/CvAccordion" component={CvAccordion} />
 
 export const Template = args => ({
   components: { CvAccordion, CvAccordionItem },

@@ -6,7 +6,6 @@ import CvDataTableCell from "./CvDataTableCell.vue";
 import CvDataTableAction from "./CvDataTableAction.vue";
 import CvDataTableSkeleton from "./CvDataTableSkeleton.vue";
 import CvButton from '../CvButton/CvButton.vue'
-import { sbCompPrefix, storySourceCode } from '../../global/storybook-utils';
 import { action } from '@storybook/addon-actions';
 import { Terminal16 as CompileIcon, Debug16 as DebugIcon, Chip16 as EmbedIcon,
   TrashCan16 as TrashCanIcon} from '@carbon/icons-vue'
@@ -46,7 +45,7 @@ function searchTestData(opts) {
 }
 const selectedRows = ref(["COBOL"])
 
-<Meta title={`${sbCompPrefix}/CvDataTable`} component={CvDataTable} />
+<Meta title="Component/CvDataTable" component={CvDataTable} />
 
 export const Template = args => ({
 // Components used in your story `template` are defined in the `components` object
