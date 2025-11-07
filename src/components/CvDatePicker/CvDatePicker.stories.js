@@ -457,7 +457,7 @@ Minimal.parameters = storyParametersObject(
   templateMinimal,
   Minimal.args
 );
-//
+
 // /* SKELETON STORY */
 //
 // const templateSkeleton = `
