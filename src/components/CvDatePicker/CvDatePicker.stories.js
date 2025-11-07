@@ -457,35 +457,35 @@ Minimal.parameters = storyParametersObject(
   templateMinimal,
   Minimal.args
 );
-
-/* SKELETON STORY */
-
-const templateSkeleton = `
-<div>
-  <cv-date-picker-skeleton v-bind="args"></cv-date-picker-skeleton>
-</div>
-`;
-
-const TemplateSkeleton = args => {
-  return {
-    components: { CvDatePicker, CvDatePickerSkeleton },
-    setup: () => ({
-      args,
-    }),
-    template: templateSkeleton,
-  };
-};
-
-export const Skeleton = TemplateSkeleton.bind({});
-Skeleton.args = initArgs;
-Skeleton.args = initArgs;
-Skeleton.parameters = {
-  controls: {
-    include: [],
-  },
-};
-Skeleton.parameters = storyParametersObject(
-  Skeleton.parameters,
-  templateSkeleton,
-  Skeleton.args
-);
+//
+// /* SKELETON STORY */
+//
+// const templateSkeleton = `
+// <div>
+//   <cv-date-picker-skeleton v-bind="args"></cv-date-picker-skeleton>
+// </div>
+// `;
+//
+// const TemplateSkeleton = args => {
+//   return {
+//     components: { CvDatePicker, CvDatePickerSkeleton },
+//     setup: () => ({
+//       args,
+//     }),
+//     template: templateSkeleton,
+//   };
+// };
+//
+// export const Skeleton = TemplateSkeleton.bind({});
+// Skeleton.args = initArgs;
+// Skeleton.args = initArgs;
+// Skeleton.parameters = {
+//   controls: {
+//     include: [],
+//   },
+// };
+// Skeleton.parameters = storyParametersObject(
+//   Skeleton.parameters,
+//   templateSkeleton,
+//   Skeleton.args
+// );
