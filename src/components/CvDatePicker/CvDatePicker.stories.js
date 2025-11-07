@@ -483,6 +483,7 @@ Skeleton.parameters = {
     include: [],
   },
 };
+Skeleton.tags = ['litmus-ignore'];
 Skeleton.parameters = storyParametersObject(
   Skeleton.parameters,
   templateSkeleton,
