@@ -19,6 +19,7 @@ nextWeek.setDate(now.getDate() + 7);
 export default {
   title: 'Component/CvDatePicker',
   component: CvDatePicker,
+  tags: ['litmus-ignore'],
   parameters: {
     a11y: {
       config: {
@@ -483,7 +484,6 @@ Skeleton.parameters = {
     include: [],
   },
 };
-Skeleton.tags = ['litmus-ignore'];
 Skeleton.parameters = storyParametersObject(
   Skeleton.parameters,
   templateSkeleton,

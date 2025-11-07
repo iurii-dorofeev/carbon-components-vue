@@ -4,7 +4,7 @@
     "storybook": {
       "buildCommand": "yarn build-storybook && cp storybook-static/stories.json storybook-static/index.json",
       "outDir": "storybook-static",
-      "excludeTags": ["no-test"],
+      "excludeTags": ["no-test", "litmus-ignore"],
       "screenshotRootSelector": "#storybook-root"
     },
     "variants": {
